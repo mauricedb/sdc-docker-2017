@@ -7,4 +7,4 @@ services:
       context: ./SDP-Docker
       dockerfile: Dockerfile
   data:
-    image: people:1000
+    image: people:10

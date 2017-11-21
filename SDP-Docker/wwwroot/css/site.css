@@ -33,3 +33,9 @@
         display: none;
     }
 }
+
+.person {
+    min-height: 75px;
+    width: 500px;
+    margin: 0 auto;
+}
