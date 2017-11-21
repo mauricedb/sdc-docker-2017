@@ -6,3 +6,5 @@ services:
     build:
       context: ./SDP-Docker
       dockerfile: Dockerfile
+  data:
+    image: people:1000
