@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  sdp-docker:
+    image: sdp-docker
+    build:
+      context: ./SDP-Docker
+      dockerfile: Dockerfile
