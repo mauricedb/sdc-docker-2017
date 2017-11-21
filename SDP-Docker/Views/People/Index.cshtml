@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Person>
+
+@{
+    ViewBag.Title = "People";
+}
+
+<h2>People</h2>
+
+@foreach (var p in Model)
+{
+    <div class="media person">
+        <div class="media-left">
+            <a href="#">
+                <img class="media-object" src="@p.Avatar">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">@p.FirstName @p.LastName</h4>
+            ✉ <a href="mailto:@p.Email">@p.Email</a>
+        </div>
+        <div class="media-left">
+            @using (Html.BeginForm( new { p.Id }))
+            {
+                <button class="btn btn-warning btn-lg">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    Delete
+                </button>
+            }
+        </div>
+    </div>
+}
+
+<div>
+    Data from: <a href="https://www.mockaroo.com/">https://www.mockaroo.com/</a>
+</div>
