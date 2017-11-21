@@ -1,0 +1,21 @@
+FROM microsoft/mssql-server-linux
+
+MAINTAINER Maurice de Beijer
+
+# Set required environent variables
+ENV ACCEPT_EULA Y
+ENV SA_PASSWORD Password1
+
+# Create a config directory
+RUN mkdir -p /usr/config
+WORKDIR /usr/config
+
+# Bundle config source
+COPY . /usr/config
+
+# Set symbolic links
+RUN ln -s /opt/mssql-tools/bin/sqlcmd /usr/local/bin/sqlcmd && \
+    ln -s /opt/mssql/bin/sqlservr /usr/local/bin/sqlservr
+
+# Start SQL Server and import data
+RUN sqlservr & ./import-data-10.sh
