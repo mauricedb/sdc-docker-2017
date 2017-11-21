@@ -17,5 +17,18 @@ namespace SDP_Docker.Controllers
                 return View(people.ToList());
             }
         }
+
+        [HttpPost]
+        public IActionResult Index(int id)
+        {
+            using (var db = new PeopleDbContext())
+            {
+                var person = db.People.SingleOrDefault(p => p.Id == id);
+                db.People.Remove(person);
+                db.SaveChanges();
+            }
+
+            return Redirect("/people");
+        }
     }
 }
