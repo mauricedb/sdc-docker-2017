@@ -17,6 +17,7 @@ namespace SDP_Docker.Controllers
 
         public IActionResult About()
         {
+            ViewData["OSVersion"] = Environment.OSVersion;
             ViewData["Message"] = "Your application description page.";
 
             return View();
