@@ -12,3 +12,4 @@ insert into People (Id, FirstName, LastName, Email, Avatar) values (7, 'Chiquita
 insert into People (Id, FirstName, LastName, Email, Avatar) values (8, 'Baily', 'Lawdham', 'blawdham7@opera.com', 'https://robohash.org/voluptasdoloresdolor.jpg?size=50x50&set=set1');
 insert into People (Id, FirstName, LastName, Email, Avatar) values (9, 'Ivory', 'Johncey', 'ijohncey8@digg.com', 'https://robohash.org/reiciendisnihilaccusamus.png?size=50x50&set=set1');
 insert into People (Id, FirstName, LastName, Email, Avatar) values (10, 'Marven', 'Stenner', 'mstenner9@wsj.com', 'https://robohash.org/innonnobis.jpg?size=50x50&set=set1');
+

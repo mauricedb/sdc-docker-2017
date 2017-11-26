@@ -12,7 +12,7 @@ namespace SDP_Docker.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=data;Database=PeopleDB;user=sa;password=Password1;");
+            optionsBuilder.UseSqlServer(@"Server=sqldata;Database=PeopleDB;user=sa;password=Password1;");
         }
     }
 }

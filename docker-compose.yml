@@ -6,5 +6,10 @@ services:
     build:
       context: ./SDP-Docker
       dockerfile: Dockerfile
-  data:
+    depends_on:
+      - sqldata
+  sqldata:
     image: people:10
+    build:
+      context: ./SQL-Data
+      dockerfile: Dockerfile-10

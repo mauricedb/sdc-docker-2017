@@ -3,9 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP-Docker", "SDP-Docker\SDP-Docker.csproj", "{B894E7B4-22A5-4F0B-817A-29926A3EF7C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SDP-Docker", "SDP-Docker\SDP-Docker.csproj", "{B894E7B4-22A5-4F0B-817A-29926A3EF7C0}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9BE92460-D853-4730-AE39-39DC92FEDDAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL-Data", "SQL-Data", "{30C6044B-64BB-43A2-BE1B-1AE14233B4AD}"
+	ProjectSection(SolutionItems) = preProject
+		SQL-Data\build.ps1 = SQL-Data\build.ps1
+		SQL-Data\CreateDB.sql = SQL-Data\CreateDB.sql
+		SQL-Data\Dockerfile-10 = SQL-Data\Dockerfile-10
+		SQL-Data\Dockerfile-1000 = SQL-Data\Dockerfile-1000
+		SQL-Data\import-data-10.sh = SQL-Data\import-data-10.sh
+		SQL-Data\import-data-1000.sh = SQL-Data\import-data-1000.sh
+		SQL-Data\People-10.sql = SQL-Data\People-10.sql
+		SQL-Data\People-1000.sql = SQL-Data\People-1000.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
